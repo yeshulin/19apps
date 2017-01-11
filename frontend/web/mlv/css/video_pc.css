@@ -1,0 +1,95 @@
+body{
+		background-color: #1a1e2b;
+	}
+	.pc-video-box{
+		width: 1200px;
+		margin: auto;
+	}
+	.pc-video-head{
+		height: 90px;
+	}
+	.pc-video-head .l,.pc-video-head .r{
+		display: table;
+		height: 100%;
+	}
+	.pc-video-head .l a,.pc-video-head .r span{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.pc-video-v{
+		
+		height: 495px;
+	}
+	.pc-video-v .l{
+		width: 880px;
+		height: 100%;
+	}
+	.pc-video-v .r{
+		    width: 320px;
+    background-color: #10121a;
+    height: 495px;
+    padding: 40px 20px;
+	}
+	.pc-video-text{
+		position: relative;
+	}
+	.pc-video-text h2{
+		font-size: 24px;
+		color: #bdb0b2;
+		font-weight: normal;
+		padding-bottom: 10px;
+		width: 666px;
+		border-bottom: 1px solid #414758;
+	}
+	.pc-video-text h2 span{
+		font-size: 18px;
+	}
+	.pc-video-text p{
+		font-size: 14px;
+		color: #999999;
+		margin-top: 10px;
+		line-height: 24px;
+		width: 740px;
+	}
+	.pc-video-tag{
+		width: 147px;
+	    height: 50px;
+	    position: absolute;
+	    bottom: 0px;
+	    right: 0px;
+	}
+	.sjdl-icon{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: url(../img/icon/pc-video2.png) no-repeat 0 0;
+		position: relative;
+		cursor: pointer;
+	}
+	.sjdl-icon > div{
+		width: 147px;
+		height: 155px;
+		background: url(../img/icon/pc-video3.png) no-repeat 0 0;
+		    position: absolute;
+    top: -162px;
+    left: -49px;
+    display: none;
+	}
+	.sjdl-icon:hover > div{
+		display: block;
+	}
+	.sjdl-icon > div img{
+		width: 135px;
+		height: 135px;
+		    position: relative;
+    top: 6px;
+    left: 6px;
+	}
+	.lxkf-icon{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background: url(../img/icon/pc-video2.png) no-repeat -97px 0;
+		    margin-left: 42px;
+		    cursor: pointer;
+	}

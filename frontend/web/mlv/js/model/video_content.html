@@ -1,0 +1,176 @@
+<div>
+<!-- PC端 -->
+	<div id="pc">
+		<link rel="stylesheet" href="/mlv/css/video_pc.css">
+		<div class="pc-video-box">
+	<div class="pc-video-head clearfix">
+		<div class="l">
+			<a href=""><img src="/mlv/img/index/logo-index.png" alt=""></a>
+		</div>
+		<div class="r">
+			<span><img src="/mlv/img/head/other/zxzb.png" alt=""></span>
+		</div>		
+	</div>
+	<div class="pc-video-v clearfix">
+		<div class="l">
+			<!-- PC播放页 -->
+	 <div id="play-pc" style="height: 100%;">
+	<script type="text/javascript">
+            // For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. 
+            var swfVersionStr = "11.4.0";
+            // To use express install, set to playerProductInstall.swf, otherwise the empty string. 
+            var xiSwfUrlStr = "http://www.newcollege.com/SobyePlayer/playerProductInstall.swf";
+            var flashvars = {};
+       		var date="731E4wFefooaffEfhebfe721203a1c";//new Date().getTime();
+       		flashvars.siteID=594;
+			
+			//直播类型 8-视频直播
+			flashvars.mediaType="8";
+			flashvars.exparam="%3FsiteId%3D882%26channelId%3D204fe35f29f54342bfaf0178792ba087";
+			flashvars.staticParams = "{'Dimension':'PC'}";
+			flashvars.profile = "http://www.newcollege.com/SobyePlayer/ProfileTest.json";
+			
+			//直播地址 为json字符串，mr://j用于判断该地址是否直接播放，请改动rul的值
+			
+			//flv   视频
+			//flashvars.url='mr://j:{"playerUrl":[{"title":"900K","url":"http://livepgc.sobeycache.com/pgc/afda327b3a99488a425f060e95ef600c.flv?auth_key=1501742565-0-0-8a4cdf9a4697d7658b071228e331aab9"}],"status":1,"catalogId":"7de7dad4be6b47b3a7d2fb24b4bb0915"}';
+			
+			//rtmp  视频
+			flashvars.url='mr://j:{"playerUrl":[{"title":"900K","url":"{{:videourl}}"}],"status":1,"catalogId":"7de7dad4be6b47b3a7d2fb24b4bb0915"}';
+			
+			//m3u8  视频
+			//flashvars.url='mr://j:{"playerUrl":[{"title":"900K","url":"http://livepgc.sobeycache.com/pgc/4233debb406e8622dece8ae2fb845ce9.m3u8?auth_key=1501726678-0-0-a1f04f8227713f55e1026a3e06fa4315"}],"status":1,"catalogId":"7de7dad4be6b47b3a7d2fb24b4bb0915"}';
+			
+		
+			
+            var params = {};
+            params.quality = "high";
+			params.base = ".";
+            params.bgcolor = "#ffffff";
+            params.allowscriptaccess = "always";
+            params.allowfullscreen = "true";
+            params.wmode="transparent";
+            var attributes = {};
+            attributes.id = "SobeyPlayer";
+            attributes.name = "SobeyPlayer";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "http://www.newcollege.com/SobyePlayer/SobeyPlayer.swf"+"?ver="+date, "flashContent",
+                "100%", "100%",
+              //	"475", "310", 
+                swfVersionStr, xiSwfUrlStr, 
+                flashvars, params, attributes);
+            
+            swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+			
+
+   		//	document.getElementById("flashContent").disabled=false;
+        </script>
+
+        <div id="flashContent">
+            <p>
+                To view this page ensure that Adobe Flash Player version 
+                11.4.0 or greater is installed. 
+            </p>
+            <script type="text/javascript"> 
+                var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://"); 
+                document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+                                + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+            </script> 
+			
+			
+        </div>
+        <br>
+      <!--<img id="imgshow"/>-->
+        <noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="SobeyPlayer">
+                <param name="movie" value="http://www.newcollege.com/SobyePlayer/SobeyPlayer.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="http://www.newcollege.com/SobyePlayer/SobeyPlayer.swf" width="100%" height="100%">
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#ffffff" />
+                    <param name="allowScriptAccess" value="always" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                    <p> 
+                        Either scripts and active content are not permitted to run or Adobe Flash Player version
+                        11.4.0 or greater is not installed.
+                    </p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </noscript>  
+
+
+        </div>
+		</div>
+		<div class="r">
+			<iframe scrolling="no" src="{{:iframeSrc}}" width="280" height="420" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="pc-video-text">
+		<h2><em>{{:roomName}}</em>&nbsp;&nbsp;&nbsp; <span>直播老师：<em>{{:ownerName}}</em></span></h2>
+		<p><em>{{:room_notice}}</em></p>
+		<div class="pc-video-tag">
+			<div class="sjdl-icon">
+				<div>
+					<img src="/mlv/img/temp/ewm.png" alt="">
+				</div>
+			</div>
+			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1665529834&amp;site=学院客服&amp;menu=yes"><i class="lxkf-icon"></i></a>
+		</div>
+	</div>
+</div>
+	</div>
+<!-- 手机端 -->
+	<div id="phone">
+		<link rel="stylesheet" href="/mlv/css/video_phone.css">
+		<div class="phone-video-box">
+	<div class="phone-video-top">
+		<i class="phone-video-back" onClick="javascript :history.back(-1);"><img src="/mlv/img/icon/phone-back.png" alt=""></i>
+        <video src="{{:videourl}}" width="100%" controls="true"></video>
+	</div>
+	<div class="phone-video-content">
+	<div class="am-tabs" data-am-tabs>
+  <ul class="am-tabs-nav am-nav am-nav-tabs">
+    <li class="am-active"><a href="#tab1">简介</a></li>
+    <!-- <li><a href="#tab2">交流</a></li> -->
+
+  </ul>
+
+  <div class="am-tabs-bd">
+    <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+      <div class="phone-video-content-top">
+			<img src="{{:head_img}}" alt="">
+			<p>直播老师：<em>{{:ownerName}}</em></p>
+      </div>
+      <div class="phone-video-content-text">
+			<h3>{{:roomName}}</h3>
+			<p>{{:room_notice}}</p>
+      </div>
+    </div>
+  <!--   <div class="am-tab-panel am-fade" id="tab2">
+     	<div>
+			交流
+     	</div> 
+
+    </div> -->
+
+  </div>
+</div>
+	</div>
+</div>
+	</div>
+
+	
+</div>

@@ -1,0 +1,35 @@
+<div>
+	<div id="cause_list">
+		<li>
+			<a href="#"><img src="{{:img}}" alt=""></a>
+			<h4><a href="#">{{:title}}</a></h4>
+			{{if type=='1'}}
+				<p><i class="icon-eye-open"></i><span>已学习{{:doneSum}}个课时</span></p>
+			{{/if}}
+			{{if type=='2'}}
+				<p><em><i class="icon-laptop"></i>{{:compuSum}}</em><i class="icon-time"></i><span>{{:countDown}}</span></p>
+			{{/if}}
+		</li>
+	</div>
+	<div id="page_model">
+	<ul class="cd-pagination no-space">				
+				<li class="button"><a href="javascript:void(0);" onclick="{{:btFnP}}">上一页</a></li>
+				<li class="button"><a href="javascript:void(0);" onclick="{{:btFnF}}">首页</a></li>
+				{{for pageFn}}
+				{{if fn}}
+				{{if current}}
+				<li><a href="javascript:void(0);" class="current" onclick="{{:fn}}">{{:num}}</a></li>
+				{{else}}
+				<li><a href="javascript:void(0);" onclick="{{:fn}}">{{:num}}</a></li>
+				{{/if}}		
+				{{/if}}		
+				{{/for}}		
+				{{if hasEnd}}				
+				<li><span>...</span></li>
+				<li><a href="javascript:void(0);" onclick="{{:btFnEnd}}">{{:Endnum}}</a></li>
+				{{/if}}
+				<li class="button"><a href="javascript:void(0);"  onclick="{{:btFnB}}">下一页</a></li>
+	</ul>
+	</div>
+</div>
+					

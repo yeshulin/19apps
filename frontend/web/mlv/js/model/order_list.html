@@ -1,0 +1,29 @@
+<div>
+	<div id="cause_list">		
+		<tr>
+			<td><a href="/user/order/view?trade_sn={{:trade_sn}}">{{:trade_sn}}</a></td>
+			<td>{{for goods}}
+				    <p>
+				    {{:goods_info.goods_name}}
+				    {{if goods_info.attrs}}
+					    ({{for goods_info.attrs}}
+					    	{{:name}} * {{if inputtype=='text'}} {{:num}} {{/if}}
+					    {{/for}})
+				    {{/if}}
+				    * {{:num}}
+				    </p>
+				{{/for}}</td>
+			<td>¥{{:price}}</td>
+			<td>{{if status == 'unpay'}}等待付款 {{/if}}
+				{{if status == 'success'}}订单完成{{/if}}
+				{{if status == 'cancel'}}订单已取消{{/if}}
+				{{if status == 'del'}}订单已被删除{{/if}}
+				{{if status == 'timeout'}}订单超时{{/if}}</td>
+			<td>
+				{{if status == 'unpay'}}
+				<a href="/site/order/pay?trade_sn={{:trade_sn}}">立即付款</a>  <a href="/user/order/cancel?trade_sn={{:trade_sn}}">取消订单</a>
+				{{/if}}
+			</td>
+		</tr>	
+	</div>
+</div>

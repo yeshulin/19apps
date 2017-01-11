@@ -1,0 +1,62 @@
+<div>
+	<div id="cause_list">
+		<div class="row f16" style="padding: 5px 0;">
+			<div class="col-md-2 text-right">总价：</div>
+			<div class="col-md-10">￥{{:price}}</div>
+		</div>
+		{{if contactname}}
+			<div class="row f16" style="padding: 5px 0;">
+				<div class="col-md-2 text-right">收货人：</div>
+				<div class="col-md-10">{{:contactname}}</div>
+			</div>
+			<div class="row f16" style="padding: 5px 0;">
+				<div class="col-md-2 text-right">联系电话：</div>
+				<div class="col-md-10">{{:phone}}</div>
+			</div>
+			<div class="row f16" style="padding: 5px 0;">
+				<div class="col-md-2 text-right">联系地址：</div>
+				<div class="col-md-10">{{:address.address}}</div>
+			</div>
+		{{/if}}
+		<div class="row f16" style="padding: 5px 0;">
+			<div class="col-md-2 text-right">商品：</div>
+			<div class="col-md-10">
+				{{for goods}}
+					<p>
+					{{:goods_info.goods_name}}
+						{{if goods_info.attrs}}
+							&nbsp;
+							({{for goods_info.attrs}}
+								{{if inputtype=='text'}} {{:num}} {{/if}} {{:name}}&nbsp;
+							{{/for}})
+						{{/if}}
+						* {{:num}}
+					</p>
+				{{/for}}
+			</div>
+		</div>
+		<div class="row f16" style="padding: 5px 0;">
+			<div class="col-md-2 text-right">订单状态：</div>
+			<div class="col-md-10">
+				
+					{{if status == 'unpay'}}
+						{{if type == 0}}
+							<span style="color: #e76f45">等待付款</span>
+							{{else}}
+							<span style="color: #e76f45">议价订单</span>
+						{{/if}}
+					{{/if}}
+					{{if status == 'success'}}订单完成{{/if}}
+					{{if status == 'cancel'}}订单已取消{{/if}}
+					{{if status == 'del'}}订单已被删除{{/if}}
+					{{if status == 'timeout'}}订单超时{{/if}}
+			</div>
+		</div>
+		{{if type == 0 and status=='unpay'}}
+			<hr style="margin:30px">
+			<div class="row f16">
+				<div class="col-md-12 text-center"><a href="/site/order/pay?trade_sn={{:trade_sn}}" class="bt-style3 pointer" style="display: inline-block">立即付款</a></div>
+			</div>
+		{{/if}}
+	</div>
+</div>

@@ -1,0 +1,2 @@
+var Link1=[{"linkid":"4","name":"华栖云","logo":"http://www.newcollege.com/uploads/image/20160822/20160822110540_94245.png","url":"http://www.chinamcloud.com","introduce":"华栖云"}];
+var Link3=[{"linkid":"5","name":" 华栖云官网","url":"http://www.chinamcloud.com","introduce":""},{"linkid":"6","name":"阿里云官网","logo":"http://www.newcollege.com/uploads/image/20160822/20160822110208_19978.png","url":"http://www.aliyun.com","introduce":""},{"linkid":"7","name":"索贝数码","url":"http://www.sobey.com","introduce":""}];

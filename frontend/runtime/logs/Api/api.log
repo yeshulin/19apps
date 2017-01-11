@@ -1,0 +1,2400 @@
+2017-01-11 10:47:31 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 10:47:31 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 10:47:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '23'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'hshjdog6a6etqu596572nipe62'
+    '_csrf-frontend' => '06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nB7vurNildysLpcNnI9jIwtqCMTcgpWL\";}'
+    'CNZZDATA1260196398' => '1537291498-1484114437-|1484125906'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.19apps.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=hshjdog6a6etqu596572nipe62; _csrf-frontend=06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nB7vurNildysLpcNnI9jIwtqCMTcgpWL%22%3B%7D; CNZZDATA1260196398=1537291498-1484114437-%7C1484125906'
+    'PATH' => 'C:\\AppCan\\AppCanStudioPersonalV3.3\\AppCan-IDE\\jre\\bin\\;C:\\AppCan\\AppCanStudioPersonalV3.3\\HDK\\emulator\\mas\\;;G:\\sobeyoracle\\product\\11.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\sobey\\SobeyTransfer;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;G:\\Program Files (x86)\\adt-bundle-windows-x86-20130917\\sdk\\tools;H:\\xampp\\php;C:\\bin;C:\\windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Go\\bin;G:\\pkg\\pkg-config_0.23-3_win32\\bin\\;H:\\gohome\\bin;C:\\Program Files (x86)\\Diffuse'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at www.19apps.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'SERVER_ADMIN' => 'localhost@admin.com'
+    'SCRIPT_FILENAME' => 'H:/xampp/htdocs/19apps/frontend/web/index.php'
+    'REMOTE_PORT' => '58811'
+    'REDIRECT_QUERY_STRING' => 'id=23'
+    'REDIRECT_URL' => '/api/advertisement/get'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=23'
+    'REQUEST_URI' => '/api/advertisement/get?id=23'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/advertisement/get'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\api\\advertisement\\get\\advertisement\\get'
+    'PHP_SELF' => '/index.php/api/advertisement/get'
+    'REQUEST_TIME_FLOAT' => 1484128050.845
+    'REQUEST_TIME' => 1484128050
+]
+2017-01-11 10:47:31 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 10:47:31 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 10:47:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '22'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'hshjdog6a6etqu596572nipe62'
+    '_csrf-frontend' => '06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nB7vurNildysLpcNnI9jIwtqCMTcgpWL\";}'
+    'CNZZDATA1260196398' => '1537291498-1484114437-|1484125906'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.19apps.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=hshjdog6a6etqu596572nipe62; _csrf-frontend=06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nB7vurNildysLpcNnI9jIwtqCMTcgpWL%22%3B%7D; CNZZDATA1260196398=1537291498-1484114437-%7C1484125906'
+    'PATH' => 'C:\\AppCan\\AppCanStudioPersonalV3.3\\AppCan-IDE\\jre\\bin\\;C:\\AppCan\\AppCanStudioPersonalV3.3\\HDK\\emulator\\mas\\;;G:\\sobeyoracle\\product\\11.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\sobey\\SobeyTransfer;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;G:\\Program Files (x86)\\adt-bundle-windows-x86-20130917\\sdk\\tools;H:\\xampp\\php;C:\\bin;C:\\windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Go\\bin;G:\\pkg\\pkg-config_0.23-3_win32\\bin\\;H:\\gohome\\bin;C:\\Program Files (x86)\\Diffuse'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at www.19apps.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'SERVER_ADMIN' => 'localhost@admin.com'
+    'SCRIPT_FILENAME' => 'H:/xampp/htdocs/19apps/frontend/web/index.php'
+    'REMOTE_PORT' => '58817'
+    'REDIRECT_QUERY_STRING' => 'id=22'
+    'REDIRECT_URL' => '/api/advertisement/get'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=22'
+    'REQUEST_URI' => '/api/advertisement/get?id=22'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/advertisement/get'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\api\\advertisement\\get\\advertisement\\get'
+    'PHP_SELF' => '/index.php/api/advertisement/get'
+    'REQUEST_TIME_FLOAT' => 1484128051.818
+    'REQUEST_TIME' => 1484128051
+]
+2017-01-11 10:47:32 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 10:47:32 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 10:47:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'hshjdog6a6etqu596572nipe62'
+    '_csrf-frontend' => '06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nB7vurNildysLpcNnI9jIwtqCMTcgpWL\";}'
+    'CNZZDATA1260196398' => '1537291498-1484114437-|1484125906'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.19apps.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=hshjdog6a6etqu596572nipe62; _csrf-frontend=06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nB7vurNildysLpcNnI9jIwtqCMTcgpWL%22%3B%7D; CNZZDATA1260196398=1537291498-1484114437-%7C1484125906'
+    'PATH' => 'C:\\AppCan\\AppCanStudioPersonalV3.3\\AppCan-IDE\\jre\\bin\\;C:\\AppCan\\AppCanStudioPersonalV3.3\\HDK\\emulator\\mas\\;;G:\\sobeyoracle\\product\\11.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\sobey\\SobeyTransfer;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;G:\\Program Files (x86)\\adt-bundle-windows-x86-20130917\\sdk\\tools;H:\\xampp\\php;C:\\bin;C:\\windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Go\\bin;G:\\pkg\\pkg-config_0.23-3_win32\\bin\\;H:\\gohome\\bin;C:\\Program Files (x86)\\Diffuse'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at www.19apps.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'SERVER_ADMIN' => 'localhost@admin.com'
+    'SCRIPT_FILENAME' => 'H:/xampp/htdocs/19apps/frontend/web/index.php'
+    'REMOTE_PORT' => '58814'
+    'REDIRECT_QUERY_STRING' => 'id=21'
+    'REDIRECT_URL' => '/api/advertisement/get'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=21'
+    'REQUEST_URI' => '/api/advertisement/get?id=21'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/advertisement/get'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\api\\advertisement\\get\\advertisement\\get'
+    'PHP_SELF' => '/index.php/api/advertisement/get'
+    'REQUEST_TIME_FLOAT' => 1484128051.913
+    'REQUEST_TIME' => 1484128051
+]
+2017-01-11 10:47:34 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:70
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 10:47:34 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:71
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 10:47:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '9'
+    'page' => '1'
+    'config' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'hshjdog6a6etqu596572nipe62'
+    '_csrf-frontend' => '06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nB7vurNildysLpcNnI9jIwtqCMTcgpWL\";}'
+    'CNZZDATA1260196398' => '1537291498-1484114437-|1484125906'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.19apps.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course/list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=hshjdog6a6etqu596572nipe62; _csrf-frontend=06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nB7vurNildysLpcNnI9jIwtqCMTcgpWL%22%3B%7D; CNZZDATA1260196398=1537291498-1484114437-%7C1484125906'
+    'PATH' => 'C:\\AppCan\\AppCanStudioPersonalV3.3\\AppCan-IDE\\jre\\bin\\;C:\\AppCan\\AppCanStudioPersonalV3.3\\HDK\\emulator\\mas\\;;G:\\sobeyoracle\\product\\11.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\sobey\\SobeyTransfer;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;G:\\Program Files (x86)\\adt-bundle-windows-x86-20130917\\sdk\\tools;H:\\xampp\\php;C:\\bin;C:\\windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Go\\bin;G:\\pkg\\pkg-config_0.23-3_win32\\bin\\;H:\\gohome\\bin;C:\\Program Files (x86)\\Diffuse'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at www.19apps.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'SERVER_ADMIN' => 'localhost@admin.com'
+    'SCRIPT_FILENAME' => 'H:/xampp/htdocs/19apps/frontend/web/index.php'
+    'REMOTE_PORT' => '58815'
+    'REDIRECT_QUERY_STRING' => 'pagesize=9&page=1&config='
+    'REDIRECT_URL' => '/api/goods/course'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=9&page=1&config='
+    'REQUEST_URI' => '/api/goods/course?pagesize=9&page=1&config='
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/goods/course'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\api\\goods\\course\\goods\\course'
+    'PHP_SELF' => '/index.php/api/goods/course'
+    'REQUEST_TIME_FLOAT' => 1484128054.699
+    'REQUEST_TIME' => 1484128054
+]
+2017-01-11 10:47:30 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 10:47:30 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in H:\xampp\htdocs\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 10:47:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '24'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'hshjdog6a6etqu596572nipe62'
+    '_csrf-frontend' => '06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nB7vurNildysLpcNnI9jIwtqCMTcgpWL\";}'
+    'CNZZDATA1260196398' => '1537291498-1484114437-|1484125906'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'H:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'H:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.19apps.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=hshjdog6a6etqu596572nipe62; _csrf-frontend=06286d340b95483b806b845f8daed4fc2c54ac76dc5afd467c36d86adb7ac0a6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nB7vurNildysLpcNnI9jIwtqCMTcgpWL%22%3B%7D; CNZZDATA1260196398=1537291498-1484114437-%7C1484125906'
+    'PATH' => 'C:\\AppCan\\AppCanStudioPersonalV3.3\\AppCan-IDE\\jre\\bin\\;C:\\AppCan\\AppCanStudioPersonalV3.3\\HDK\\emulator\\mas\\;;G:\\sobeyoracle\\product\\11.2.0\\dbhome_1\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;c:\\Program Files (x86)\\Intel\\iCLS Client\\;c:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\sobey\\SobeyTransfer;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\bin;G:\\Program Files (x86)\\Java\\jdk1.8.0_65\\jre\\bin;G:\\Program Files (x86)\\adt-bundle-windows-x86-20130917\\sdk\\tools;H:\\xampp\\php;C:\\bin;C:\\windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Go\\bin;G:\\pkg\\pkg-config_0.23-3_win32\\bin\\;H:\\gohome\\bin;C:\\Program Files (x86)\\Diffuse'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8 Server at www.19apps.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.12 (Win32) OpenSSL/1.0.1l PHP/5.6.8'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/xampp/htdocs/19apps/frontend/web'
+    'SERVER_ADMIN' => 'localhost@admin.com'
+    'SCRIPT_FILENAME' => 'H:/xampp/htdocs/19apps/frontend/web/index.php'
+    'REMOTE_PORT' => '58816'
+    'REDIRECT_QUERY_STRING' => 'id=24'
+    'REDIRECT_URL' => '/api/advertisement/get'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=24'
+    'REQUEST_URI' => '/api/advertisement/get?id=24'
+    'SCRIPT_NAME' => '/index.php'
+    'PATH_INFO' => '/api/advertisement/get'
+    'PATH_TRANSLATED' => 'redirect:\\index.php\\api\\advertisement\\get\\advertisement\\get'
+    'PHP_SELF' => '/index.php/api/advertisement/get'
+    'REQUEST_TIME_FLOAT' => 1484128050.708
+    'REQUEST_TIME' => 1484128050
+]
+2017-01-11 13:30:48 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:30:48 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:30:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '18'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62911'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=18'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=18'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141448.9011
+    'REQUEST_TIME' => 1484141448
+]
+2017-01-11 13:30:50 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:50 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '44'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62913'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=44&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=44&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141450.0432
+    'REQUEST_TIME' => 1484141450
+]
+2017-01-11 13:30:51 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:51 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:51 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '45'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62909'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=45&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=45&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141451.4693
+    'REQUEST_TIME' => 1484141451
+]
+2017-01-11 13:30:52 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:52 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '46'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62908'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=46&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=46&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141452.6624
+    'REQUEST_TIME' => 1484141452
+]
+2017-01-11 13:30:53 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:53 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '47'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62910'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=47&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=47&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141453.8984
+    'REQUEST_TIME' => 1484141453
+]
+2017-01-11 13:30:55 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:55 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:30:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '48'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62912'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=48&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=48&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141455.0745
+    'REQUEST_TIME' => 1484141455
+]
+2017-01-11 13:30:56 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:30:56 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:30:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '24'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62911'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=24'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=24'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141456.2346
+    'REQUEST_TIME' => 1484141456
+]
+2017-01-11 13:30:57 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:30:57 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:30:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '23'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62913'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=23'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=23'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141457.3296
+    'REQUEST_TIME' => 1484141457
+]
+2017-01-11 13:30:58 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:30:58 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:30:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '22'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62908'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=22'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=22'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141458.5127
+    'REQUEST_TIME' => 1484141458
+]
+2017-01-11 13:30:59 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:30:59 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:30:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62910'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=21'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=21'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141459.6128
+    'REQUEST_TIME' => 1484141459
+]
+2017-01-11 13:31:01 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:31:01 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:31:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '18'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62967'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=18'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=18'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141461.2789
+    'REQUEST_TIME' => 1484141461
+]
+2017-01-11 13:31:02 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:02 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '44'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62963'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=44&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=44&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141462.4019
+    'REQUEST_TIME' => 1484141462
+]
+2017-01-11 13:31:03 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:03 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '47'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62964'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=47&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=47&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141463.576
+    'REQUEST_TIME' => 1484141463
+]
+2017-01-11 13:31:04 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:04 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '46'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62965'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=46&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=46&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141464.748
+    'REQUEST_TIME' => 1484141464
+]
+2017-01-11 13:31:05 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:05 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '45'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62966'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=45&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=45&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141465.9141
+    'REQUEST_TIME' => 1484141465
+]
+2017-01-11 13:31:07 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:07 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\GoodsController.php:45
+2017-01-11 13:31:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'method' => 'course'
+    'pagesize' => '4'
+    'page' => '1'
+    'config' => '48'
+    'index' => ''
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62968'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/goods/course?pagesize=4&page=1&config=48&index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'pagesize=4&page=1&config=48&index'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141467.1002
+    'REQUEST_TIME' => 1484141467
+]
+2017-01-11 13:31:08 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:31:08 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:31:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '24'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62967'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=24'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=24'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141468.2622
+    'REQUEST_TIME' => 1484141468
+]
+2017-01-11 13:31:09 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:31:09 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:31:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '23'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62963'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=23'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=23'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141469.3993
+    'REQUEST_TIME' => 1484141469
+]
+2017-01-11 13:31:10 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:31:10 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:31:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '22'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62964'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=22'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=22'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141470.5024
+    'REQUEST_TIME' => 1484141470
+]
+2017-01-11 13:31:12 [127.0.0.1][-][-][info][apiLog] 访问地址：Array
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:70
+2017-01-11 13:31:12 [127.0.0.1][-][-][info][apiLog] 接收数据：Array
+(
+)
+
+    in E:\phpStudy\WWW\19apps\frontend\controllers\api\ApiController.php:71
+2017-01-11 13:31:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'ASPSESSIONIDCSBSRCAQ' => 'DFCGCALCGLFHDDGMLLLMFBGF'
+    'CNZZDATA293201' => 'cnzz_eid=2056217733-1484137196-http%3A%2F%2Fwww.19apps.com%2F&ntime=1484137196'
+    'advanced-frontend' => '80tbq4q85e254qk60og2uu9pt1'
+    '_csrf-frontend' => '89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv\";}'
+    'CNZZDATA1260196398' => '1322770670-1484140425-|1484140425'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Administrator\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'USER-20161113BX'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Administrator'
+    'LOCALAPPDATA' => 'C:\\Users\\Administrator\\AppData\\Local'
+    'LOGONSERVER' => '\\\\USER-20161113BX'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'USER-20161113BX'
+    'USERNAME' => 'Administrator'
+    'USERPROFILE' => 'C:\\Users\\Administrator'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    '_DFX_INSTALL_UNSIGNED_DRIVER' => '1'
+    'HTTP_COOKIE' => 'ASPSESSIONIDCSBSRCAQ=DFCGCALCGLFHDDGMLLLMFBGF; CNZZDATA293201=cnzz_eid%3D2056217733-1484137196-http%253A%252F%252Fwww.19apps.com%252F%26ntime%3D1484137196; advanced-frontend=80tbq4q85e254qk60og2uu9pt1; _csrf-frontend=89bd6b9c208894f20c66a3948c885dd9494161a20ee91be8feebe051ddf5979fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22u5CJfseHkTIUEUhX8TLyh6NxESJiMAjv%22%3B%7D; CNZZDATA1260196398=1322770670-1484140425-%7C1484140425'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://www.19apps.com/site/course'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'www.19apps.com'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'www.19apps.com'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62965'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.11.5'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/api/advertisement/get?id=21'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=21'
+    'PATH_TRANSLATED' => 'E:/phpStudy/WWW/19apps/frontend/web'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => 'E:/phpStudy/WWW/19apps/frontend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1484141472.1125
+    'REQUEST_TIME' => 1484141472
+]

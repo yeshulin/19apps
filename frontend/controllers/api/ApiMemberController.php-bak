@@ -1,0 +1,741 @@
+<?php
+namespace frontend\controllers\api;
+
+use Yii;
+use frontend\controllers;
+use yii\filters\VerbFilter;
+use common\models\LoginForm;
+use \frontend\models\Member;
+use frontend\models\SignupForm;
+use \frontend\controllers\api\ApiSmsController;
+
+/**
+ * Site controller
+ */
+class ApiMemberController extends ApiController
+{
+
+    public $enableCsrfValidation = false;//关闭csrf验证
+    private $token = "newSobeyCloud";//用户接口验证
+    private $response;
+    private $vboss;
+    //返回数据格式
+    private $return = [
+        'code' => '0000',
+        'status' => 'success',
+        'data' => [
+            'num' => 0,
+            'data' => '',
+        ]
+    ];
+    //允许返回的字段
+    private $returnField = [
+        'id', 'username', 'usertype', 'email', 'nickname', 'mobile', 'sex', 'address', 'zhuanye', 'yuanxi', 'banji', 'created_at',
+        'lastdate', 'loginnum', 'introduce', 'updated_at'
+    ];
+    //允许更新的字段
+    private $updateField = [
+        'nickname', 'sex', 'address', 'zhuanye', 'yuanxi', 'banji', 'introduce',
+    ];
+    private $createFiled = [
+        'username', 'email', 'password', 'mobile'
+    ];
+    private $vbossupdateField = [
+        'loginname', 'username', 'email', 'password', 'mobile'
+    ];
+
+    /*
+     * 数据以JSON格式返回
+     * */
+    public function init()
+    {
+        //接口验证
+//        $this->tokenCheck();
+//        $this->isGuest();
+        //\Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+        $this->response = \Yii::$app->response;
+        $this->response->format = \yii\web\Response::FORMAT_JSON;
+        $this->vboss = new ApiVbossController();
+    }
+
+
+    /**
+     * @inheritdoc
+     *
+     */
+   /* public function behaviors()
+    {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
+    }*/
+
+    /**
+     * Lists all User models.
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+
+//        $vboss= new ApiVbossController();
+//        $data['loginname']="zxk920618";
+//        $data['password']="123456";
+//        $data['mobile']="13618396404z";
+//        $data['email']="815602511";
+//        $data['source']='sobeycollege';
+//        $data['regip']=Yii::$app->request->getUserIP();
+//        $data=$vboss->vboss_login($data);
+//        var_dump($data);exit;
+//        Yii::$app->runAction(['Site/index']);exit;
+        $return = $this->return;
+        $return['data']['data'] = 'Api Sucess!';
+        $this->response->data = $return;
+    }
+
+    /**
+     * Displays a single User model.
+     */
+    public function actionView()
+    {
+        Yii::info("用户信息获取-start", "apiLog");
+//        $this->isGuest();
+        $return = $this->return;
+        if (Yii::$app->request->isPost) {
+            $postData = json_decode(Yii::$app->request->getRawBody(), true);
+            if (!empty($postData) && (isset($postData['id']) && !empty($postData['id']))) {
+                Yii::info("用户信息获取:获取成功", "apiLog");
+                $id = $postData['id'];
+                $data = $this->findModel($id, true);
+                $datas = '';
+                if (!empty($data)) {
+                    foreach ($data as $k => $val) {
+                        $datas[$val['id']] = $val;
+                    }
+                }
+//                else{//本地数据查找失败，拉取vboss信息
+//                    if(YiI::$app->params['allowvboss']==1){
+//
+//                    }
+//                }
+                $return['data']['num'] = empty($datas) ? 0 : count($datas);
+                $return['data']['data'] = $datas;
+            } else {
+                $return['code'] = '0003';
+                $return['status'] = 'failed';
+                $return['data']['error'] = 'Illegal Parameters!';
+            }
+        } else {
+            Yii::info("用户信息获取:非Post请求", "apiLog");
+            $return['code'] = '0003';
+            $return['status'] = 'failed';
+            $return['data']['error'] = 'Invaild Operation!Use POST instead!';
+        }
+        Yii::info("用户信息获取:结束", "apiLog");
+        Yii::info("用户信息获取:结束" . print_r($return, true), "apiLog");
+        $this->response->data = $return;
+    }
+
+    public function actionLogin()
+    {
+        header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
+        Yii::info("用户登录-start", "apiLog");
+        $return = $this->return;
+        //Vboss login
+//        Yii::$app->cache->set('testcache[aaa]', array(1=>2));//默认有效期为一年
+//        $data=Yii::$app->cache->get('testcaaache[aaa]');//默认有效期为一年
+        if (!Yii::$app->user->isGuest) {
+            $return['data']['num'] = 1;
+            $return['data']['data'] = "User login already!";
+            Yii::info("用户登录:用户已在线", "apiLog");
+
+        } else {
+            $model = new LoginForm();
+            $datas = json_decode(Yii::$app->request->getRawBody(), true);
+            if (isset($datas['LoginForm']['loginname'])) $datas['LoginForm']['username'] = $datas['LoginForm']['loginname'];
+            $data = $datas['LoginForm'];
+            if ($model->load($datas) && $model->login()) {
+                Yii::info("用户登录:登陆成功", "apiLog");
+                if (Yii::$app->params['allowvboss'] == 1) { //开启vboss同步登录
+                    /*  同步登录 vboss*/
+                    $vbossinfo = $this->vboss->vboss_login(array(
+                        'type' => $data['type'],
+                        $data['type'] => $data[$data['type']],
+                        'password' => $data['password'],
+                        'source' => 'sobeycollege',
+                        'loginip' => Yii::$app->request->getUserIP()
+                    ));
+                    Yii::info("用户登录:Vboss登陆", "apiLog");
+                    Yii::info("用户登录:Vboss登陆结果." . print_r($vbossinfo, true), "apiLog");
+//                   var_dump($vbossinfo);exit;
+//                    header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
+//                    setcookie('pin',$vbossinfo['data']['cookie']['pin'],$cookietime);
+//                    setcookie('logining',$vbossinfo['data']['cookie']['logining'],$cookietime);
+//                    setcookie('pinId',$vbossinfo['data']['cookie']['pinId'],$cookietime);
+//                    setcookie('lkey',$loginname);
+//                    setcookie('lvalue',$_POST['username']);
+                }
+                $userInfo=$this->objarray_to_array(Member::findByUsername($model->username));
+                $return['data']['num'] = 1;
+                $return['data']['data'][$userInfo['id']] = $userInfo;
+            } else {
+                Yii::info("用户登录:登陆错误，用户密码不匹配", "apiLog");
+                $return['code'] = "0003";
+                $return['status'] = "failed";
+                $return['data']['num'] = 0;
+                $return['data']['error'] = $model->getErrors();
+            }
+        }
+        Yii::info("用户登录:登陆结束", "apiLog");
+        Yii::info("用户登录:" . print_r($return, true), "apiLog");
+        $this->response->data = $return;
+//        }
+    }
+    public function actionGetUser(){
+        $return=$this->return;
+        $this->isGuest();
+        $user=$this->objarray_to_array(Yii::$app->getUser()->getIdentity());
+        $return['data']['num']=1;
+        $return['data']['data'][$user['id']]=$user;
+        $this->response->data=$return;
+    }
+    public function actionLogout()
+    {
+        header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
+        Yii::info("用户登出-start", "apiLog");
+        $this->isGuest();
+//        if (isset($postData['id']) && $postData['id'] != '' && Yii::$app->getUser()->getIdentity()->getId() == $postData['id']) {
+            $return = $this->return;
+            Yii::$app->user->logout();
+            if (Yii::$app->user->isGuest) {
+                $return['data']['data'] = "Logout Success!";
+            } else {
+                $return['code'] = "0001";
+                $return['status'] = "failed";
+                $return['data']['error'] = "Logout Failed!";
+            }
+//        }else{
+//            Yii::info("用户登出:无效的用户id", "apiLog");
+//            $return['code'] = '0003';
+//            $return['status'] = 'failed';
+//            $return['data']['error'] = '无效的用户id';
+//        }
+            Yii::info("用户登出-end", "apiLog");
+            $this->response->data = $return;
+
+    }
+//    public function actionSetCache(){
+//        Yii::$app->cache->set("aaa","bbb");
+//    }
+//    public function actionGetCache(){
+//        echo Yii::$app->cache->get("aaa");exit;
+//    }
+    /**
+     * Creates a new User model.
+     */
+    public function actionReg()
+    {
+        Yii::info("用户注册-start", "apiLog");
+        $return = $this->return;
+        if (Yii::$app->request->isPost) {
+            $postData = json_decode(Yii::$app->request->getRawBody(), true);
+//            var_dump(Yii::$app->request->post());
+//            var_dump($postData);exit;
+            $datavboss = $postData['SignupForm'];
+            if (isset($postData['SignupForm']['loginname'])) $postData['SignupForm']['username'] = $postData['SignupForm']['loginname'];
+            $goLogin = 1;
+            if (Yii::$app->params['allowvboss'] == 1) { //开启vboss同步登录
+//                var_dump($datavboss);exit;
+                Yii::info("用户注册:vboss注册", "apiLog");
+                $data['loginname'] = $datavboss['loginname'];
+                $data['email'] = $datavboss['email'];
+                $data['mobile'] = $datavboss['mobile'];
+                $data['password'] = $datavboss['password'];
+                $data['source'] = 'sobeycollege';
+                $data['ip'] = Yii::$app->request->getUserIP();
+                $return['code'] = "0003";
+                $return['status'] = "failed";
+                $checkError = 0;
+                if (strlen($data['password']) < 6 || strlen($data['password']) > 16) {
+                    $return['data']['error'] = "密码应在6到16个字符之间";
+                    $checkError = 1;
+                }
+                if (!preg_match(" /^[1][3578][0-9]{9}$/", $data['mobile'])) {
+                    $return['data']['error'] = "手机号码格式错误";
+                    $checkError = 1;
+                }
+                if (!preg_match("/^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/", $data['email'])) {
+                    $return['data']['error'] = "邮箱格式错误";
+                    $checkError = 1;
+                }
+                if (strlen($data['loginname']) < 4 || strlen($data['loginname']) > 20) {
+                    $return['data']['error'] = "用户名应在4到20个字符之间";
+                    $checkError = 1;
+                }
+                if (!$checkError) {
+                    $return['code'] = "0000";
+                    $return['status'] = "success";
+                    Yii::info("用户注册:Vboss注册数据." . print_r($data, true), "apiLog");
+                    $vbossinfo = $this->vboss->vboss_register($data);
+                    Yii::info("用户注册:vboss注册返回结果." . print_r($vbossinfo, true), "apiLog");
+                    if (!isset($vbossinfo['code']) || $vbossinfo['code'] != 0) {
+                        $goLogin = 0;//vboss注册失败,本地停止注册
+                    }
+                } else {
+                    $goLogin = 0;
+                }
+            }
+            if ($goLogin) {
+                Yii::info("用户注册:本地注册开始", "apiLog");
+                foreach ($postData['SignupForm'] as $k => $val) {
+                    if (!in_array($k, $this->createFiled)) {
+                        unset($postData['SignupForm'][$k]);
+                    }
+                }
+                Yii::info("用户注册:用户数据过滤." . print_r($postData, true), "apiLog");
+                if (array_key_exists('password', $postData['SignupForm'])) {
+                    $model = new SignupForm();
+                    if ($model->load($postData)) {
+                        $user = $model->signup();
+                        if ($user['code'] != "0000") {
+                            Yii::info("用户注册:注册失败", "apiLog");
+                            $return['code'] = '0001';
+                            $return['status'] = 'failed';
+                            $return['data']['data'] = 'Create failed!';
+                            $return['data']['error'] = $user['data'];
+                        } else {
+                            Yii::info("用户注册:注册成功", "apiLog");
+                            $return['data']['num'] = 1;
+                            $user = $this->objarray_to_array($user['data'], $this->returnField);
+                            $return['data']['data'][$user['id']] = $user;
+                        }
+                    } else {
+                        Yii::info("用户注册:模型数据加载出错", "apiLog");
+                        $erros = $model->getFirstErrors();
+                        $return['code'] = '0001';
+                        $return['status'] = 'failed';
+                        $return['data']['data'] = 'Load data failed!';
+                        $return['data']['error'] = $erros;
+                    }
+                } else {
+                    Yii::info("用户注册:密码字段未空", "apiLog");
+                    $return['code'] = '0003';
+                    $return['status'] = 'failed';
+                    $return['data']['error'] = 'Password must be required!';
+                }
+            } else {//vboss注册出错
+                Yii::info("用户注册:Vboss注册出错", "apiLog");
+                $return['code'] = '0003';
+                $return['status'] = 'failed';
+                if (!$checkError) $return['data']['error'] = $vbossinfo['msg'];
+            }
+        } else {
+            Yii::info("用户注册：非Post请求", "apiLog");
+            $return['code'] = '0003';
+            $return['status'] = 'failed';
+            $return['data']['error'] = 'Invaild Operation!Use POST instead!';
+        }
+        Yii::info("用户注册-end", "apiLog");
+        Yii::info("用户注册-end." . print_r($return, true), "apiLog");
+        $this->response->data = $return;
+    }
+
+    public function actionResetPwd()
+    {
+        Yii::info("重置密码(登陆):start", "apiLog");
+        $this->isGuest();
+//        $member=New Member();
+        $return = $this->return;
+        if (Yii::$app->request->isPost) {
+            $postData = json_decode(Yii::$app->request->getRawBody(), true);
+            Yii::info("用户数据:".print_r($postData,true),"apiLog");
+            Yii::info("当前用户Id:".Yii::$app->getUser()->getIdentity()->getId(),"apiLog");
+            if (isset($postData['id']) && $postData['id'] != '' && Yii::$app->getUser()->getIdentity()->getId() == $postData['id']) {
+                if (isset($postData['oldPassword']) && Yii::$app->getUser()->getIdentity()->validatePassword($postData['oldPassword'])) {
+                    //新密码校验
+                    if (isset($postData['newPassword']) && $postData['newPassword'] != '') {
+                        if ($postData['newPassword'] != $postData['oldPassword']) {
+                            if (strlen($postData['newPassword']) >= 6 && strlen($postData['newPassword']) <= 16) {
+                                Yii::$app->getUser()->getIdentity()->generateAuthKey();
+                                Yii::$app->getUser()->getIdentity()->setPassword($postData['newPassword']);
+                                if (!Yii::$app->getUser()->getIdentity()->save()) {
+                                    Yii::info("重置密码(登陆):重置密码出错", "apiLog");
+                                    $return['code'] = '0003';
+                                    $return['status'] = 'failed';
+                                    $return['data']['error'] = Yii::$app->getUser()->getIdentity()->getErrors();
+                                }
+                            } else {
+                                Yii::info("重置密码(登陆):密码应在6位到16位之间", "apiLog");
+                                $return['code'] = '0003';
+                                $return['status'] = 'failed';
+                                $return['data']['error'] = "密码应在6位到16位之间";
+                            }
+                        } else {
+                            Yii::info("重置密码(登陆):新旧密码不能一致", "apiLog");
+                            $return['code'] = '0003';
+                            $return['status'] = 'failed';
+                            $return['data']['error'] = '新旧密码不能一致';
+                        }
+                    } else {
+                        Yii::info("重置密码(登陆):新密码不能为空", "apiLog");
+                        $return['code'] = '0003';
+                        $return['status'] = 'failed';
+                        $return['data']['error'] = '新密码不能为空';
+                    }
+                } else {
+                    Yii::info("重置密码(登陆):原密码不正确", "apiLog");
+                    $return['code'] = '0003';
+                    $return['status'] = 'failed';
+                    $return['data']['error'] = '原密码不正确';
+                }
+            } else {
+                Yii::info("重置密码(登陆):无效的用户id", "apiLog");
+                $return['code'] = '0003';
+                $return['status'] = 'failed';
+                $return['data']['error'] = '无效的用户id';
+            }
+        } else {
+            Yii::info("重置密码(登陆):非Post请求", "apiLog");
+            $return['code'] = '0003';
+            $return['status'] = 'failed';
+            $return['data']['error'] = 'Invaild Operation!Use POST instead!';
+        }
+        Yii::info("重置密码(登陆):end", "apiLog");
+        Yii::info("重置密码(登陆):end." . print_r($return, true), "apiLog");
+        $this->response->data = $return;
+    }
+
+    //密码找回
+    public function actionForgetPwd($code = '')
+    {
+        Yii::info("重置密码(未登陆):start", "apiLog");
+        $return = $this->return;
+        if (Yii::$app->request->isPost) {
+            $postData = json_decode(Yii::$app->request->getRawBody(), true);
+            if (isset($postData['id']) && $postData['id'] != '') {
+                if (isset($postData['code']) && $postData['code'] != '') {
+                    Yii::info("重置密码(未登陆):邮箱重置密码", "apiLog");
+                    $auth_key = md5(Yii::$app->params['auth_key']);
+                    Yii::info("重置密码(未登陆):获取auth_key:" . $auth_key, "apiLog");
+                    $time = time();
+                    Yii::info("重置密码(未登陆):时间戳:" . $time, "apiLog");
+//            $hour = date('y-m-d h', $time);
+//                    $postData = json_decode(Yii::$app->request->getRawBody(), true);
+                    $code = $this->sys_auth($postData['code'], 'DECODE', $auth_key);
+                    Yii::info("重置密码(未登陆):code:" . print_r($code, true), "apiLog");
+                    $code = explode("\t", $code);
+                    if (is_array($code) && is_numeric($code[0]) && date('y-m-d h', $time) == date('y-m-d h', $code[1])) {
+//                    if ($code[0] == Yii::$app->getUser()->getIdentity()->id) {
+                        Yii::info("重置密码(未登陆):校验正确，密码重置开始:" . $code, "apiLog");
+                        $return = $this->UpdateBase($code[0]);
+//                    } else {
+//                        $return['code'] = '0003';
+//                        $return['status'] = 'failed';
+//                        $return['data']['error'] = '非法操作';
+//                    }
+                    } else {
+                        Yii::info("重置密码(未登陆):校验错误:" . $code, "apiLog");
+                        $return['code'] = '0003';
+                        $return['status'] = 'failed';
+                        $return['data']['error'] = '非法参数';
+                    }
+
+                } else {
+                    $c_apisms = new ApiSmsController();
+                    $return = $c_apisms->actionYanzheng();
+                    if ($return['code'] == "0000") {
+                        $id = "";
+                        $mid = Member::findByMobile(Yii::$app->session->get('yzm_mobile'));
+                        if ($mid) $id = $mid->id;
+                        $return = $this->UpdateBase($id);
+                    }
+                }
+            } else {
+                Yii::info("重置密码(未登陆):无效的用户id", "apiLog");
+                $return['code'] = '0003';
+                $return['status'] = 'failed';
+                $return['data']['error'] = '无效的用户id';
+            }
+        } else {
+            Yii::info("重置密码(未登陆):非Post请求", "apiLog");
+            $return['code'] = '0003';
+            $return['status'] = 'failed';
+            $return['data']['error'] = '空的参数';
+        }
+        Yii::info("重置密码(未登陆):end", "apiLog");
+        Yii::info("重置密码(未登陆):end." . print_r($return, true), "apiLog");
+        $this->response->data = $return;
+    }
+
+    //vboss基础信息修改
+    public function UpdateBase($id)
+    {
+        Yii::info("基础信息修改):start", "apiLog");
+        $return = $this->return;
+        if (Yii::$app->request->isPost) {
+            $postData = json_decode(Yii::$app->request->getRawBody(), true);
+            isset($postData['Member']['loginname']) && $postData['Member']['username'] = $postData['Member']['loginname'];
+            $datavboss = $postData['Member'];
+            $dataTicket['type'] = "loginname";
+            $member = Member::findOne($id);
+            if (!empty($member)) {
+                $dataTicket['loginname'] = Member::findOne($id)->getUsername();
+                Yii::info("基础信息修改):凭证信息." . print_r($dataTicket, true), "apiLog");
+                if (Yii::$app->params['allowvboss'] == 1) { //开启vboss同步
+                    Yii::info("基础信息修改):Vboss同步开始", "apiLog");
+                    $vbossinfo = $this->vboss->vboss_get($dataTicket);
+                    Yii::info("基础信息修改):Vboss信息获取." . print_r($vbossinfo, true), "apiLog");
+//                var_dump($vbossinfo);exit;
+                    if (isset($vbossinfo['code']) && $vbossinfo['code'] == 0) {
+                        $id = $vbossinfo['data']['info'][0]['id'];//vboss用户id,
+                    }
+                    foreach ($datavboss as $k => $val) {
+                        if (!in_array($k, $this->vbossupdateField)) {
+                            unset($datavboss[$k]);
+                        }
+                    }
+                    $datavboss['id'] = $id;
+                    Yii::info("基础信息修改):Vboss信息更新." . print_r($datavboss, true), "apiLog");
+//                $vbossinfo['code']=0;
+                    $vbossinfo = $this->vboss->vboss_edit($datavboss);
+                    Yii::info("基础信息修改):Vboss信息更新返回结果." . print_r($vbossinfo, true), "apiLog");
+                    if (!isset($vbossinfo['code']) || $vbossinfo['code'] != 0) {
+                        $return['code'] = '0001';
+                        $return['status'] = 'failed';
+                        if (isset($vbossinfo['code'])) {
+                            $return['data']['error'] = $vbossinfo['msg'];
+                        } else {
+                            $return['data']['error'] = "系统错误，数据修改失败";
+                        }
+                    } else if ($vbossinfo['code'] == 0) {
+                        Yii::info("基础信息修改):Vboss更新成功", "apiLog");
+                        Yii::info("基础信息修改):本地数据更新开始", "apiLog");
+                        $model = Member::findByUsername($dataTicket['loginname']);
+                        if (isset($postData['Member'])) {
+                            foreach ($postData['Member'] as $k => $val) {
+                                if (!in_array($k, $this->updateField)) {
+                                    unset($postData['Member'][$k]);
+                                }
+                            }
+//                            $model = $this->findModel($postData['id']);
+//                    var_dump($model);exit;
+                            if (empty($model)) {
+                                $return['code'] = '0002';
+                                $return['status'] = 'failed';
+                                $return['data']['error'] = 'No such data';
+                                return $return;
+//                        exit;
+                            }
+//                            $model = $model[0];
+                            $model->delRules('password', 'required');//取消密码required属性
+                            $model->delRules('mobile', 'required');//取消密码required属性
+                            if ($model->load($postData)) {
+                                if (isset($postData['Member']['password']) && $postData['Member']['password'] != '') {
+                                    $model->generateAuthKey();
+                                    $model->setPassword($postData['Member']['password']);
+                                }
+                                if (!$model->save()) {
+                                    Yii::info("基础信息修改):本地数据更新失败", "apiLog");
+                                    $return['code'] = '0001';
+                                    $return['status'] = 'failed';
+                                    $return['data']['data'] = 'Updated failed!';
+                                    $return['data']['error'] = $model->getErrors();
+                                }
+                            } else {
+                                $return['code'] = '0001';
+                                $return['status'] = 'failed';
+                                $return['data']['error'] = 'Load data failed!';
+                            }
+                            Yii::info("基础信息修改):本地数据更新完成", "apiLog");
+                        } else {
+                            Yii::info("基础信息修改):没有传入Member信息", "apiLog");
+                            $return['code'] = '0003';
+                            $return['status'] = 'failed';
+                            $return['data']['error'] = 'Illegal Parameters!';
+                        }
+                    }
+                } else {
+                    $return['code'] = '0001';
+                    $return['status'] = 'failed';
+                    $return['data']['error'] = '同步操作未开启,更新失败!';
+                }
+            } else {
+                $return['code'] = '0001';
+                $return['status'] = 'failed';
+                $return['data']['error'] = '未获取到数据!';
+            }
+        } else {
+            Yii::info("基础信息修改):end", "apiLog");
+            $return['code'] = '0003';
+            $return['status'] = 'failed';
+            $return['data']['error'] = 'Invaild Operation!Use POST instead!';
+        }
+        Yii::info("基础信息修改):end." . print_r($return, true), "apiLog");
+        return $return;
+        $this->response->data = $return;
+    }
+
+    /**
+     * Updates an existing User model.
+     */
+    public function actionUpdate()
+    {
+        Yii::info("信息修改:start", "apiLog");
+        $this->isGuest();
+        $return = $this->return;
+        if (Yii::$app->request->isPost) {
+	   $postJson=Yii::$app->request->getRawBody();
+            $postData = json_decode($postJson,true);
+            Yii::info("用户数据:".print_r($postData,true),"apiLog");
+            Yii::info("当前用户Id:".Yii::$app->getUser()->getIdentity()->getId(),"apiLog");
+            if (isset($postData['id']) && $postData['id'] != '' && Yii::$app->getUser()->getIdentity()->getId() == $postData['id']) {
+//            $goLogin=1;
+//            if(Yii::$app->params['allowvboss']==1) { //开启vboss同步登录
+////                var_dump($datavboss);exit;
+//                $data['loginname']=$datavboss['loginname'];
+//                $data['email']=$datavboss['email'];
+//                $data['mobile']=$datavboss['mobile'];
+//                $data['password']=$datavboss['password'];
+//                $data['source']='sobeycollege';
+//                $data['ip']=Yii::$app->request->getUserIP();
+//                $vbossinfo=$this->vboss->vboss_register($data);
+//                if(!isset($vbossinfo['code']) || $vbossinfo['code']!=0){
+//                    $goLogin=0;//vboss注册失败,本地停止注册
+//                }
+//            }
+                if (isset($postData['Member'])) {
+                    foreach ($postData['Member'] as $k => $val) {
+                        if (!in_array($k, $this->updateField)) {
+                            unset($postData['Member'][$k]);
+                        }
+                    }
+
+                    if (!empty($postData) && (isset($postData['id']) && !empty($postData['id']))) {
+                        $model = $this->findModel($postData['id']);
+//                    var_dump($model);exit;
+                        if (empty($model)) {
+                            Yii::info("信息修改):没有找到对应的用户信息", "apiLog");
+                            $return['code'] = '0002';
+                            $return['status'] = 'failed';
+                            $return['data']['error'] = 'No such data';
+                            return $return;
+//                        exit;
+                        }
+                        $model = $model[0];
+                        $model->delRules('password', 'required');//取消密码required属性
+                        $model->delRules('mobile', 'required');//取消密码required属性
+                        if ($model->load($postData)) {
+                            if (isset($postData['Member']['password']) && $postData['Member']['password'] != '') {
+                                Yii::info("信息修改):密码设置", "apiLog");
+                                $model->generateAuthKey();
+                                $model->setPassword($postData['Member']['password']);
+                            }
+                            if (!$model->save()) {
+                                Yii::info("信息修改):保存数据出错", "apiLog");
+                                $return['code'] = '0001';
+                                $return['status'] = 'failed';
+//                                $return['data']['error'] = 'Updated failed!';
+                                $return['data']['error'] = $model->getErrors();
+                            }
+                        } else {
+                            Yii::info("信息修改):模型加载数据出错", "apiLog");
+                            $return['code'] = '0001';
+                            $return['status'] = 'failed';
+                            $return['data']['error'] = 'Load data failed!';
+                        }
+
+                    } else {
+                        Yii::info("信息修改):用户id为空", "apiLog");
+                        $return['code'] = '0003';
+                        $return['status'] = 'failed';
+                        $return['data']['error'] = '用户id为空 ';
+                    }
+                } else {
+                    Yii::info("信息修改:没有传入Member信息", "apiLog");
+                    $return['code'] = '0003';
+                    $return['status'] = 'failed';
+                    $return['data']['error'] = '没有传入Member信息!';
+                }
+            }else{
+                Yii::info("信息修改:无效的用户id", "apiLog");
+                $return['code'] = '0003';
+                $return['status'] = 'failed';
+                $return['data']['error'] = '无效的用户id';
+            }
+        } else {
+            Yii::info("信息修改:非法Post参数", "apiLog");
+            $return['code'] = '0003';
+            $return['status'] = 'failed';
+            $return['data']['error'] = 'Invaild Operation!Use POST instead!';
+        }
+        Yii::info("信息修改:end", "apiLog");
+        Yii::info("信息修改:end。" . print_r($return, true), "apiLog");
+        $this->response->data = $return;
+    }
+
+    /**
+     * Deletes an existing User model.
+     * If deletion is successful, the browser will be redirected to the 'index' page.
+     * @param integer $id
+     * @return mixed
+     */
+//    protected function actionDelete($id)
+//    {
+//        $this->findModel($id)->delete();
+//
+//        return $this->redirect(['index']);
+//    }
+
+    /**
+     * @array true返回数组，false返对象
+     */
+    protected function findModel($id, $isarray = false)
+    {
+        if (($model = Member::findAll($id)) !== null) {
+            return $isarray ? $this->objarray_to_array($model) : $model;
+        } else {
+            //throw new NotFoundHttpException('The requested page does not exist.');
+            return '';
+        }
+    }
+
+    //Get All members
+    protected function findAllUser()
+    {
+        $posts = Yii::$app->db->createCommand('SELECT * FROM co_member')
+            ->queryAll();
+        return $posts;
+    }
+
+    protected function objarray_to_array($obj)
+    {
+        $ret = array();
+        foreach ($obj as $key => $value) {
+            if (in_array($key, $this->returnField)) {
+                if (gettype($value) == "array" || gettype($value) == "object") {
+                    $ret[$key] = $this->objarray_to_array($value);
+                } else {
+                    $ret[$key] = $value;
+                }
+            }
+        }
+        return $ret;
+    }
+
+    private function checkType($str)
+    {
+        /*
+         * email 1
+         * other 0
+         * */
+        $emailpattern = "/^([0-9A-Za-z\\-_\\.]+)@([0-9a-z]+\\.[a-z]{2,3}(\\.[a-z]{2})?)$/i";
+        if (preg_match($emailpattern, $str)) {
+            return 1;
+        }
+        return 0;
+    }
+}

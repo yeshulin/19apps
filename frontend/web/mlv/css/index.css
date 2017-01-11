@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+
+
+/* 大首页 css */
+
+/* 直播*/
+.f36{
+  font-size: 36px;
+}
+.index-swiper-top h1{
+  font-weight: bold;
+  height:70px;
+  line-height: 50px;
+  color:#272636;
+}
+.index-swiper-top{
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+.index-swiper-top a{
+  color: #e76f45;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 6px;
+  display: inline-block;
+
+  text-decoration: underline;
+}
+.index-content{
+  width:1200px;
+  margin:auto;
+  text-align: center;
+}
+.index-main-swiper p{
+  color:#7a828f;
+  font-size: 14px;
+  line-height: 24px;
+}
+.index-swiper-top p{
+      max-width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.index-swiper-bot h3 img{
+      vertical-align: text-bottom;
+      margin-right: 15px;
+}
+.index-swiper-bot .index-zhibo{
+  width: 400px;
+  padding:0px 65px;
+  float: left;
+}
+.index-zhibo-img{
+  margin-bottom: 50px;
+}
+.index-swiper-bot h3{
+  color:#272636;
+  text-align: left;
+  font-weight: normal;
+      line-height: 40px;
+      height:40px;
+}
+
+.index-swiper-bot p{
+  line-height: 30px;
+  margin-top:20px;
+  text-align: left;
+}
+.index-footer{
+  color:#697088;
+  font-size: 16px;
+  line-height: 50px;
+  height:50px;
+  text-align: center;
+  background: #d5d5d5;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  z-index: 99;
+}
+.index-footer span{
+  font-size: 14px;
+  color:#4c505e;
+}
+
+
+/* 实验室 */
+.index-shiyanshi-bot{
+  width:566px;
+  height:520px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.index-shiyanshi-bot .index-zhibo{
+  width:283px;
+  height:260px;
+  padding:40px 20px;
+}
+.index-shiyanshi-bot p{
+  margin-left: 50px;
+}
+.index-shiyanshi-warp{
+  height: 520px;
+    background-repeat: no-repeat;
+    background-position: 407px 35px;
+}
+
+/* 实训 */
+.index-shixun-img{
+    margin-top: -20px;
+}
+.index-rengzheng-bot{
+  width:355px;
+}
+.index-rengzheng-bot div{
+  margin-top: 70px;
+}
+.index-rengzheng-bot p{
+      margin:0 0 0 56px;
+
+}
+
+
+/* 技能*/
+.index-jineng-bot{
+      background-repeat: no-repeat;
+    background-position: center 0;
+}
+.index-jineng-content{
+  width:295px;
+}
+.index-jineng-content div{
+      height: 300px;
+}
+.index-jineng-bot .l h3{
+  text-align: right;
+}
+.index-jineng-bot .l img{
+  margin:0  0 0 15px;
+}
+.index-jineng-content .f24{
+  font-size: 30px;
+}
+/* 在线学习*/
+.index-xuexi-bot{
+  width:895px;
+      margin: 0 0 0 300px;
+}
+.index-xuexi-bot div{
+      width: 215px;
+    float: right;
+    margin: 0 0 0 21px;
+    height: 230px;
+}
+.index-xuexi-bot p{
+  line-height: 26px;
+  margin-left: 50px;
+      margin-top: 2px;
+}
+.index-xuexi-warp{
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 433px;
+        margin:80px 0 0 0;
+}
+
+/* 云教 */
+.index-swiper-main{
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.index-swiper-main h1{
+  font-size:60px;
+  color:#55546b;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.index-swiper-main p{
+  font-size: 16px;
+}
+.index-yunjiao-bot div{
+  float:left;
+  width:370px;
+  padding:30px 0;
+  height:263px;
+  border-bottom: 1px solid #d7d7d7;
+  margin-right:45px;
+  background:#fff;
+
+
+}
+.index-yunjiao-bot div.last{
+  margin-right: 0;
+}
+.index-swiper-main .index-swiper-top {
+      margin: 85px 0 60px 0;
+}
+.index-yunjiao-bot{
+  margin-top: 105px;
+}
+.index-yunjiao-bot h2{
+  font-size: 30px;
+  color: #55546b;
+  font-weight: 100;
+  margin:25px 0 15px 0;
+}
+.index-yunjiao-bot p{
+  font-size:14px;
+}

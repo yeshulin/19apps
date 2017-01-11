@@ -1,0 +1,33 @@
+<?php
+return [
+   "routeTile"=>[
+      'user'=>"个人中心",
+       "site/course"=>"在线学习",
+       "site/course/list"=>"在线学习",
+       "site/course/play"=>"课程播放",
+       "site/live"=>"直播课堂",
+       "site/lab"=>"云端实验室",
+       "site/practical"=>"企业实训",
+       "site/train"=>"技能培训",
+       "site/certification"=>"专业认证",
+       "user/default/mycourse"=>"我的课程",
+       "user/practical/index"=>"我的实训",
+       "user/lab/index"=>"我的实验室",
+       "user/live/index"=>"我的直播",
+       "user/order/list"=>"订单列表",
+       "user/info/renzheng"=>"我的认证",
+       "user/info/edit"=>"资料修改",
+       "user/info/pwd"=>"密码修改",
+       "user/address/index"=>"收货地址",
+       "user/address/add"=>"添加收货地址",
+       "user/address/view"=>"修改收货地址",
+       "user/activation/index"=>"激活码",
+       "user/activation/list"=>"我的激活码",
+       "user/message/index"=>"站内信",
+       "user/message/view"=>"站内信查看",
+       "user/feedback/index"=>"我的反馈",
+       "user/feedback/view"=>"查看反馈",
+       "user/feedback/add"=>"意见反馈",
+
+   ]
+];
